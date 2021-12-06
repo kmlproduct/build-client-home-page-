@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.home-page {
+  background-image: url("../img/shutterstock_1349978468.png");
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  position: relative;
+}
+.home-page .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 467px) {
+  .home-page .header {
+    flex-direction: column-reverse;
+  }
+}
+.home-page .header .title {
+  padding-left: 30px;
+}
+.home-page .header .title h1 {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.2s;
+}
+@media only screen and (max-width: 467px) {
+  .home-page .header .title h1 {
+    padding-top: 20px;
+    font-size: 15px;
+  }
+}
+.home-page .header .title h1:hover {
+  color: #f59494;
+  border-bottom: 3px solid rgba(233, 26, 233, 0.333);
+  margin-bottom: -4px;
+  transform: translateX(10px) scale(1.1);
+}
+.home-page .header .logo {
+  width: 330px;
+  height: 100px;
+  background-color: #fff;
+  -webkit-clip-path: polygon(8% 0, 100% 0, 100% 75vh, 0 100%);
+          clip-path: polygon(8% 0, 100% 0, 100% 75vh, 0 100%);
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 467px) {
+  .home-page .header .logo {
+    width: 100%;
+  }
+}
+.home-page .header .logo:hover {
+  background-color: #7ed56f;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.home-page .header .logo img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
+  -webkit-clip-path: polygon(8% 0, 100% 0, 100% 75vh, 0 100%);
+          clip-path: polygon(8% 0, 100% 0, 100% 75vh, 0 100%);
+}
+.home-page .header .logo img:hover {
+  opacity: 0.5;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.home-page .logo-2 {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  height: 50px;
+  width: 50px;
+}
+.home-page .logo-3 {
+  position: absolute;
+  left: 100px;
+  bottom: 200px;
+  height: 100px;
+  width: 100px;
+}
+@media only screen and (max-width: 467px) {
+  .home-page .logo-3 {
+    left: 20px;
+    bottom: 81px;
+    height: 50px;
+    width: 50px;
+  }
+}/*# sourceMappingURL=main.css.map */
